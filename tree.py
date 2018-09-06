@@ -21,3 +21,17 @@ class Tree:
 
             if flag and self.right != None :
                 self.right = self.right.addNode(i, l, r)
+
+
+def getHeight(myTree) :
+    '''
+    myTree의 높이를 반환
+    '''
+    result = 0
+
+    if myTree == None or myTree.index == -1:
+        return result
+    else:
+        result = result + 1
+        result = result + max(getHeight(myTree.left), getHeight(myTree.right))
+        return result
