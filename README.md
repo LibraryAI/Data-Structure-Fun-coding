@@ -1,4 +1,4 @@
-# Data Structure and etc
+# Data Structure and etc.
 
 ### Data Structures
 #### Done
